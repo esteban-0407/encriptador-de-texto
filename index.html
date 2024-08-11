@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Encriptación</title>
+    <link rel="stylesheet" href="styleshhet/styles.css">
+    
+</head>
+<body>
+    <header>
+        <img src="assets/Logo.png" alt="Logo" class="logo">
+    </header>
+    <div class="content">
+        <div class="left">
+            <textarea id="inputText" rows="10" placeholder="Introduce el texto aquí..."></textarea>
+            <p class="info"><img class="icono-info" src="assets/icono.png"></i> ¡Solo letras minúsculas sin acentos!</p>
+            <div class="buttons">
+                <button class="Encriptar" onclick="encrypttext()">Encriptar</button>
+                <button class="Desencriptar" onclick="decrypttext()">Desencriptar</button>
+                <button class="Limpiar" onclick="clearText()">Limpiar</button>
+            </div>
+        </div>
+        <div class="right">
+            <img src="assets/inicio.png" alt="persona buscando" id="inicio" class="inicio">
+        <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+            <textarea id="outputText" rows="10" readonly>El resultado aparecera aqui...</textarea>
+            <button class="copyButton" onclick="copyText()">Copiar Texto</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Elaborado por Esteban Alarcon. ALURA LATAM.</p>
+    </footer>
+    <script src="scripts.js" ></script>
+</body>
+</html>

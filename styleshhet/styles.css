@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+:root{
+    --color-1: #eff1fa;
+    --color-2: #072b61;
+    --color-3:#052051;
+    --color-4:#adb5bd;
+    --color-5:#868e96;
+    --color-6:#ffffff;
+
+--fuente-primaria:font-family: "Lora", serif;
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body {
+  
+    font-family:var(--fuente-primaria);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background-color:var(--color-1);
+    color:var(--color-6);
+    text-align: center;
+    padding: 10px 0; 
+    width: 100%; 
+    height: 80px;
+    display: flex;
+    align-items: start;
+    justify-content: start; 
+    position: relative;
+}
+header .logo {
+    position: absolute;
+    left: 10px; 
+    height: 40px; 
+    padding: 4px 2px;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    width: 100%;
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left {
+    width: 75%;
+    background-color:var(--color-1);
+}
+
+.right {
+    width: 25%;
+    background-color:var(--color-6);
+   
+    border-radius: 10px; 
+    padding: 15px 20px; 
+    
+}
+
+.left textarea {
+    flex: 1;
+    margin-bottom: 20px;
+    resize: none; 
+    background-color:var(--color-1); 
+    border: none;
+    padding: 10px;
+    box-sizing: border-box; 
+    font-family: var(--fuente-primaria);
+    
+}
+.left textarea, .right textarea {
+border:none;
+outline:none;
+}
+
+
+.right textarea {
+    flex: 1;
+    margin-bottom: 20px;
+    resize: none; 
+    background-color:var(--color-6); 
+    border:none; 
+    padding: 10px;
+    box-sizing: border-box; 
+    border-radius: 16px;
+    color: var(--color-5);
+    font-family: var(--fuente-primaria);
+
+}
+
+.buttons {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+    margin-top: 10px; 
+    
+}
+.Encriptar{
+   
+    background-color:var(--color-2); 
+    color:var(--color-6);
+    border: 1px solid var(--color-4);
+    font-family: var(--fuente-primaria);
+    
+}
+.Desencriptar{
+    background-color:var(--color-4); 
+    color: var(--color-2);
+    border: 1px solid var(--color-2);
+    font-family: var(--fuente-primaria);
+}
+.Limpiar{
+    background-color:var(--color-2); 
+    color:var(--color-6);
+    border: 1px solid var(--color-2);
+    font-family: var(--fuente-primaria);
+}
+
+.copyButton {
+    padding: 10px 20px;
+    align-self: center;
+    color: var(--color-2);
+    border: 1px solid var(--color-2);
+    font-family: var(--fuente-primaria);
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    
+}
+.Encriptar:hover{
+    background-color: var(--color-3);
+    padding: 11px 21px;
+
+}
+.Desencriptar:hover{
+    background-color: var(--color-5);
+    padding: 11px 21px;
+
+}
+.Limpiar:hover{
+    background-color: var(--color-3);
+    padding: 11px 21px;
+
+}
+.copyButton:hover{
+    background-color: var(--color-4);
+    padding: 11px 21px;
+
+}
+.info {
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-3);
+    margin: 10px 2px; 
+    font-family: var(--fuente-primaria);
+}
+
+.icono-info {
+
+    margin-right: 2px 2px;
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.7rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+   
+
+}
+footer {
+    background-color:var(--color-2);
+    color:var(--color-6);
+    text-align: center;
+    padding: 5px 0; 
+    width: 100%; 
+    height: 100%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    font-family: var(--fuente-primaria);
+}
+@media (max-width: 1024px) {
+   
+    .content {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+  button{
+    width: 100%;
+   
+  }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    #copyButton {
+        margin-top: 10px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+   
+    .content {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .left, .right {
+        width: 100%; 
+    }
+    button{
+        width: 100%;
+        
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    #copyButton {
+        margin-top: 10px;
+      
+    }
+}
