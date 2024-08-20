@@ -1,3 +1,9 @@
+document.getElementById("inputText").addEventListener("input", function () {
+    this.value = this.value
+        .toLowerCase() // Convertir a minúsculas
+        .normalize("NFD").replace(/[\u0300-\u036f]/g, "") // Eliminar acentos
+        .replace(/[^a-z\s]/g, ""); // Eliminar caracteres no permitidos
+});
 function encrypttext() {
     let texto = document.getElementById("inputText").value;
     let inicio = document.getElementById("inicio");
